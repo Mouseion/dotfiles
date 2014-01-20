@@ -20,7 +20,9 @@ fi
 alias ga='git add'
 alias gb='git branch'
 alias gba='git branch -va'
+alias gbl='git blame'
 alias gc='git checkout'
+alias gcl='git clone'
 alias gcft='git cat-file -t'    # type
 alias gcfp='git cat-file -p'    # dump
 alias gcm='git commit -m'
