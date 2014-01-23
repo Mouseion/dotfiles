@@ -40,6 +40,8 @@ alias gla='git log --oneline --decorate --all --graph'
 alias gld='git log --oneline --decorate'
 alias glh='git hist'
 alias glo='git log --oneline'
+alias gloi='git log origin/master ^master'   # log subsets: incoming
+alias gloo='git log master ^origin/master'   # log subsets: outgoing
 alias glp="git log --pretty=format:'%C(yellow)%h%Cred%d%Creset %C(magenta)<%an>%Creset %s %C(bold blue)(%cr)' --graph"
 alias gm='git merge'
 alias gpl='git pull'
