@@ -68,6 +68,8 @@ alias gt='git tag'
 # More aliases
 alias ll='ls -lha'
 alias la='ls -la'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 
 # Sublime alias
