@@ -18,6 +18,8 @@ fi
 
 # Git aliases
 alias ga='git add'
+alias gaa='git add -A'
+alias gap='git add --patch'
 alias gb='git branch'
 alias gba='git branch -va'
 alias gbl='git blame'
