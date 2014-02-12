@@ -1,0 +1,7 @@
+node_modules
+*.swp
+*.swo
+.Spotlight-V100
+.Trashes
+.Trash-*
+.DS_Store
