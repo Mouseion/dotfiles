@@ -12,6 +12,34 @@ if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
 fi
 
 
+RED="\[\033[0;31m\]"
+MAGENTA="\[\033[0;35m\]"
+BROWN="\[\033[0;33m\]"
+YELLOW="\[\033[1;33m\]"
+GRAY="\[\033[1;90m\]"
+LIGHT_GRAY="\[\033[0;37m\]"
+DARK_GRAY="\[\033[1;30m\]"
+CYAN="\[\033[0;36m\]"
+BLUE="\[\033[0;34m\]"
+GREEN="\[\033[0;32m\]"
+LIGHT_GREEN="\[\033[1;32m\]"
+GIT_PS1_SHOWDIRTYSTATE=true
+export LS_OPTIONS='--color=auto'
+export CLICOLOR='Yes'
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+
+export PS1=$LIGHT_GRAY"\u@\h"'$(
+    if [[ $(__git_ps1) =~ \*\)$ ]]
+    # a file has been modified but not added
+    then echo "'$RED'"$(__git_ps1 " (%s)")
+    elif [[ $(__git_ps1) =~ \+\)$ ]]
+    # a file has been added, but not commited
+    then echo "'$GREEN'"$(__git_ps1 " (%s)")
+    # the state is clean, changes are commited
+    else echo "'$BROWN'"$(__git_ps1 " (%s)")
+    fi)'$DARK_GRAY" \w"$GREEN": "
+
+
 # This loads NVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh 
 
