@@ -1,0 +1,62 @@
+[color]
+	ui = true
+[core]
+	editor = /usr/bin/vim
+	autocrlf = input
+	safecrlf = true
+[alias]
+  hist = log --pretty=format:'%h %ar | %s%d [%an]' --graph --date=short
+  ga = add
+  gaa = add -A
+  gap = add --patch
+  gb = branch
+  gba = branch -va
+  gbl = blame
+  gc = checkout
+  gcln = clean -nd    
+  gclf = clean -fd
+  gcl = clone
+  gcft = cat-file -t    
+  gcfp = cat-file -p    
+  gcm = commit -m
+  gcam = commit -am
+  gco = count-objects
+  gcov = count-objects -v
+  gd = diff
+  gds = diff --staged
+  gf = fetch
+  gfsck = fsck
+  gfscku = fsck --unreachable
+  ggc = gc
+  gl = log
+  gla = log --oneline --decorate --all --graph
+  gld = log --oneline --decorate
+  glh = hist
+  glo = log --oneline
+  gloi = log origin/master ^master   
+  gloo = log master ^origin/master   
+  glp = log --pretty=format:'%C(yellow)%h%Cred%d%Creset %C(magenta)<%an>%Creset %s %C(bold blue)(%cr)' --graph
+  gm = merge
+  gpl = pull
+  gps = push
+  gpr = prune
+  grf = reflog
+  grm = remote
+  grmv = remote -v
+  grms = remote show
+  grb = rebase
+  grs = reset
+  grss = reset --soft
+  grsh = reset --hard
+  grvl = rev-list HEAD --count
+  gs = status
+  gsl = shortlog
+  gslsn = shortlog -sn
+  gst = stash
+  gsta = stash apply
+  gstc = stash clear
+  gstd = stash drop
+  gstl = stash list
+  gstp = stash pop
+  gsw = show
+  gt = tag
