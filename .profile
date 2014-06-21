@@ -1,5 +1,6 @@
 # Set ANSI Colors in iTerm2
 export CLICOLOR=1
+export EDITOR=vim
 
 
 # Source git completion and prompt and use color
