@@ -67,6 +67,7 @@ alias gf='git fetch'
 alias gfsck='git fsck'
 alias gfscku='git fsck --unreachable'
 alias ggc='git gc'
+alias gi='git init'
 alias gl='git log'
 alias gla='git log --oneline --decorate --all --graph'
 alias gld='git log --oneline --decorate'
@@ -106,6 +107,9 @@ alias la='ls -la'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-
 # Sublime alias
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+# Tmux alias for 256color
+alias tmux='tmux -2'
+
