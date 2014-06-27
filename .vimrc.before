@@ -11,3 +11,7 @@ let g:syntastic_javascript_checkers = ['jshint']
 " better :sign interface symbols
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
+
+" enable mustache in html for meteor
+let g:mustache_abbreviations = 1
+au BufNewFile,BufRead *.html setf mustache
