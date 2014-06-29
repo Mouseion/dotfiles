@@ -15,3 +15,9 @@ let g:syntastic_warning_symbol = '!'
 " enable mustache in html for meteor
 let g:mustache_abbreviations = 1
 au BufNewFile,BufRead *.html setf mustache
+
+" powerline status line
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
+set rtp+=~/.janus/powerline/powerline/bindings/vim
+let g:Powerline_symbols = 'fancy'
