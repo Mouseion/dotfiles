@@ -1,4 +1,6 @@
-color jellybeans
+set background=dark
+color solarized
+let g:solarized_termcolors = 256
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
