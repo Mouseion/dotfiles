@@ -1,5 +1,5 @@
 set background=dark
-color solarized
+color molokai
 let g:solarized_termcolors = 256
 
 if !exists('g:airline_symbols')
