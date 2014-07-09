@@ -77,6 +77,8 @@ alias glo='git log --oneline'
 alias gloi='git log origin/master ^master'   # log subsets: incoming
 alias gloo='git log master ^origin/master'   # log subsets: outgoing
 alias glp="git log --pretty=format:'%C(yellow)%h%Cred%d%Creset %C(magenta)<%an>%Creset %s %C(bold blue)(%cr)' --graph"
+alias glps="glp -S"
+alias gls="git log -S"
 alias gm='git merge'
 alias gpl='git pull'
 alias gps='git push'
