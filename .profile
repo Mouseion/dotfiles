@@ -65,10 +65,13 @@ alias gcov='git count-objects -v'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gf='git fetch'
+
+# verifies integrity and finds corrupt objects
 alias gfsck='git fsck'
 alias gfsckf='git fsck --full'
 alias gfscku='git fsck --unreachable'
-alias ggc='git gc'
+
+alias ggc='git gc'    # garbage collect
 alias gi='git init'
 alias gl='git log'
 alias gla='git log --oneline --decorate --all --graph'
@@ -78,8 +81,11 @@ alias glo='git log --oneline'
 alias gloi='git log origin/master ^master'   # log subsets: incoming
 alias gloo='git log master ^origin/master'   # log subsets: outgoing
 alias glp="git log --pretty=format:'%C(yellow)%h%Cred%d%Creset %C(magenta)<%an>%Creset %s %C(bold blue)(%cr)' --graph"
+
+# Search which commit a particular string is introduced/removed
 alias glps="glp -S"
 alias gls="git log -S"
+
 alias gm='git merge'
 alias gpl='git pull'
 alias gps='git push'
