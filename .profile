@@ -123,3 +123,4 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 # Tmux alias for 256color
 alias tmux='tmux -2'
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
