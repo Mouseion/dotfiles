@@ -100,8 +100,11 @@ alias grss='git reset --soft'
 alias grsh='git reset --hard'
 alias grvl='git rev-list HEAD --count'    # total # of commits
 alias gs='git status'
+
+# Show committers and their commits
 alias gsl='git shortlog'
-alias gslsn='git shortlog -sn'
+alias gslsn='git shortlog -sn'    # squashes all commits into the total and sort the list
+
 alias gst='git stash'
 alias gsta='git stash apply'
 alias gstc='git stash clear'
