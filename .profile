@@ -114,16 +114,20 @@ alias gstp='git stash pop'
 alias gsw='git show'
 alias gt='git tag'
 
+
 # More aliases
 alias ll='ls -lha'
 alias la='ls -la'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+
 # Sublime alias
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
+
 # Tmux alias for 256color
 alias tmux='tmux -2'
+
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
